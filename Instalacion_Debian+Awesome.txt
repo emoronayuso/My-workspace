@@ -1,0 +1,88 @@
+
+
+INSTALAR
+
+ xorg
+ awesome
+
+ build-essential
+ checkinstall
+ make
+ cmake
+ automake
+ autoconf
+ git
+ git-core
+ xcompmgr
+ nitrogen
+ lxappearance
+
+ alsamixer
+ alsa-utils
+ vim
+ vim-gtk -> Para operacion de copiar y pegar
+ sudo
+ urxvt-unicode
+ rxvt-unicode-256color
+
+ faenza-icon-theme
+ google-chrome
+ nautilus
+
+ gksu
+ flashplugin-nonfree
+ usbmount
+ gparted
+ okular   --> para ver pdf
+ gscan2pdf  -> programa para escanear
+
+ xserver-xephyr -> para ver errores de awesome
+
+
+
+FICHEROS Y CARPETAS DE CONFIGURACION
+
+ .bash_aliases
+ .bash_profile
+ .bashrc
+ .Xresources
+ .Xdefaults   --> borrar este fichero
+ 
+ xrdb  --> para comprobar el fichero de configuracion .Xresources
+ xrdb -merge .Xresources
+
+   
+  ~.vim/bundle/*
+  ~.config/awesome/icons/*
+  ~.config/awesome/pomodoro.lua
+  ~.config/awesome/rc.lua
+  ~.config/awesome/themes/*
+  ~.config/awesome/vicious/*
+  ~.config/awesome/debug_awesome.sh
+
+  /etc/apt/sources.list
+  /etc/wpa_supplicant/wpa_supplicant.conf
+  /etc/network/interfaces 
+
+ CONFIGURACIONES
+
+ - Configurar el usuario en /etc/sudoers
+ - Abrir un documento con vim despues de copiar la carpeta bundle para que se añada la nueva configuracion
+ 
+
+PARA CAMBIAR EL TEMA Y LOS ICONOS
+
+ - Instalamos el paquete lxappearance, desde aqui se puede configurar todo, lo relacionado con los temas.
+
+ Y descargamos el tema faenza para los iconos, y descargamso el tema de los controles zukitwo.
+
+ Sigo este tutorial (http://lassekongo83.deviantart.com/art/Zukitwo-203936861)
+
+
+
+
+
+
+
+ 
+ 
