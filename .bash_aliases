@@ -1,0 +1,16 @@
+
+alias apagar="sudo shutdown -h now"
+alias ..="cd .."
+alias cl=clear
+alias ll="ls -lav --color=auto"
+alias g="google-chrome &"
+alias ls="ls -lahF --color=auto"
+alias tareas="gtg &"
+alias escanear="gscan2pdf &"
+alias montar="sudo mountpy -m"
+alias grabarcd="brasero &"
+alias particiones="lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT"
+alias config_impresora="system-config-printer &"
+alias calculadora="gcalctool"
+alias puertos="netstat -punlt"
+alias virtuales-kvm="sudo virt-manager &"
