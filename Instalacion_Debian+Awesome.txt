@@ -22,7 +22,7 @@ INSTALAR
  vim
  vim-gtk -> Para operacion de copiar y pegar
  sudo
- urxvt-unicode
+ rxvt-unicode
  rxvt-unicode-256color
 
  faenza-icon-theme
@@ -51,7 +51,9 @@ FICHEROS Y CARPETAS DE CONFIGURACION
  xrdb  --> para comprobar el fichero de configuracion .Xresources
  xrdb -merge .Xresources
 
-   
+
+ Abrir .vimrc con vim y ejecutar $:NeoBundleInstall
+
   ~.vim/bundle/*
   ~.config/awesome/icons/*
   ~.config/awesome/pomodoro.lua
