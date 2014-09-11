@@ -22,7 +22,7 @@ INSTALAR
  vim
  vim-gtk -> Para operacion de copiar y pegar
  sudo
- rrxvt-unicode
+ rxvt-unicode
  rxvt-unicode-256color
 
  faenza-icon-theme
