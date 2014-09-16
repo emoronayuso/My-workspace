@@ -1,6 +1,6 @@
 
 
-INSTALAR
+INSTALAR LOS SIGUIENTES PAQUETES
 
  xorg
  awesome
@@ -79,7 +79,10 @@ PARA CAMBIAR EL TEMA Y LOS ICONOS
  Y descargamos el tema faenza para los iconos, y descargamso el tema de los controles zukitwo.
 
  Sigo este tutorial (http://lassekongo83.deviantart.com/art/Zukitwo-203936861)
-
+ 
+ 
+INICIAMOS EL CONTROLADOR DE SONIDO ALSA 
+ sudo alsactl init
 
 
 
