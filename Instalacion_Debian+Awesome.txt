@@ -76,9 +76,9 @@ PARA CAMBIAR EL TEMA Y LOS ICONOS
 
  - Instalamos el paquete lxappearance, desde aqui se puede configurar todo, lo relacionado con los temas.
 
- Y descargamos el tema faenza para los iconos, y descargamso el tema de los controles zukitwo.
+ Y descargamos el tema faenza(http://tiheum.deviantart.com/art/Faenza-Icons-173323228) para los iconos, 
+ y descargamso el tema de los controles zukitwo (http://lassekongo83.deviantart.com/art/Zukitwo-203936861).
 
- Sigo este tutorial (http://lassekongo83.deviantart.com/art/Zukitwo-203936861)
  
  
 INICIAMOS EL CONTROLADOR DE SONIDO ALSA 
