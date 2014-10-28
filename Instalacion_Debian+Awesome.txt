@@ -64,6 +64,8 @@ FICHEROS Y CARPETAS DE CONFIGURACION
 
   /etc/apt/sources.list
      -> Incluir "deb ftp://ftp.debian.org/debian stable main contrib non-free"
+     
+     flashplugin-nonfree
   
   /etc/wpa_supplicant/wpa_supplicant.conf
   /etc/network/interfaces 
