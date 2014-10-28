@@ -63,6 +63,8 @@ FICHEROS Y CARPETAS DE CONFIGURACION
   ~.config/awesome/debug_awesome.sh
 
   /etc/apt/sources.list
+     -> Incluir "deb ftp://ftp.debian.org/debian stable main contrib non-free"
+  
   /etc/wpa_supplicant/wpa_supplicant.conf
   /etc/network/interfaces 
 
