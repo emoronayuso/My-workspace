@@ -80,7 +80,7 @@ PARA CAMBIAR EL TEMA Y LOS ICONOS
 
  - Instalamos el paquete lxappearance, desde aqui se puede configurar todo, lo relacionado con los temas.
 
- Y descargamos el tema faenza(http://tiheum.deviantart.com/art/Faenza-Icons-173323228) para los iconos, 
+ Y descargamos el tema faenza(http://www.deviantart.com/users/outgoing?http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip) para los iconos, 
  y descargamso el tema de los controles zukitwo (http://lassekongo83.deviantart.com/art/Zukitwo-203936861).
 
  
