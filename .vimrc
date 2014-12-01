@@ -1,7 +1,6 @@
 "---------------------------------------------
 " Neobundle config
 "---------------------------------------------
-set nocompatible               " choose no compatibility with legacy vi
 filetype off                   " required by vundle
 
 " Auto installing NeoBundle
@@ -17,13 +16,21 @@ endif
 
 
 " Call NeoBundle
-if has('vim_starting')
-    set rtp+=$HOME/.vim/bundle/neobundle.vim/
+ if has('vim_starting')
+     set nocompatible
+     "set rtp+=$HOME/.vim/bundle/neobundle.vim/
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-call neobundle#rc(expand($HOME.'/.vim/bundle/'))
+
+"call neobundle#rc(expand($HOME.'/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " is better if NeoBundle rules NeoBundle (needed!)
+"NeoBundle 'Shougo/neobundle.vim'
+
 NeoBundle 'Shougo/neobundle.vim'
+
+
 
 " Installed bundles
 "------------------
@@ -59,7 +66,13 @@ NeoBundle 'majutsushi/tagbar'
 " NeoBundle 'Yggdroot/indentLine'
 " Auto-complete
 " NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'Shougo/neocomplete.vim'
+
+
+"if has('lua')
+"    NeoBundle 'Shougo/neocomplete.vim'
+"end
+
+
 " Auto-format
 "NeoBundle 'Chiel92/vim-autoformat'
 " Navigation sidebar
@@ -75,8 +88,15 @@ NeoBundle 'tpope/vim-repeat'
 " DirDiff
 " NeoBundle 'vim-scripts/DirDiff.vim'
 
+call neobundle#end()
+
 " non github repos
 " ex - NeoBundle 'git://git.example.com/repo.git'
+
+
+
+
+
 
 "---------------------------------------------
 " General config
@@ -261,3 +281,6 @@ let g:airline_right_sep = ''
 
 " Neocomplete
  let g:neocomplete#enable_at_startup = 1
+
+set spelllang=es,en
+
