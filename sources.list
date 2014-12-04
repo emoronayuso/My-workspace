@@ -1,0 +1,29 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux 7.7.0 _Wheezy_ - Official amd64 NETINST Binary-1 20141018-13:04]/ wheezy main
+
+#deb cdrom:[Debian GNU/Linux 7.7.0 _Wheezy_ - Official amd64 NETINST Binary-1 20141018-13:04]/ wheezy main
+
+deb http://ftp.es.debian.org/debian/ wheezy main
+deb-src http://ftp.es.debian.org/debian/ wheezy main
+
+deb http://security.debian.org/ wheezy/updates main
+deb-src http://security.debian.org/ wheezy/updates main
+
+# wheezy-updates, previously known as 'volatile'
+deb http://ftp.es.debian.org/debian/ wheezy-updates main
+deb-src http://ftp.es.debian.org/debian/ wheezy-updates main
+
+deb ftp://ftp.debian.org/debian stable main contrib non-free
+
+#deb http://ftp.de.debian.org/debian wheezy-backports main
+
+
+
+#### Repos unstable de Debian ###############################################################
+#####Para instalar awesome 3.5 en debian########
+# Descargar paquetes uno a uno desde aqui -> https://packages.debian.org/experimental/awesome
+
+deb http://ftp.de.debian.org/debian sid main
+
+#############################################################################################
