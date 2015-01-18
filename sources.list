@@ -24,6 +24,14 @@ deb ftp://ftp.debian.org/debian stable main contrib non-free
 #####Para instalar awesome 3.5 en debian########
 # Descargar paquetes uno a uno desde aqui -> https://packages.debian.org/experimental/awesome
 
-deb http://ftp.de.debian.org/debian sid main
+###deb http://ftp.de.debian.org/debian sid main
 
 #############################################################################################
+
+## Debian Testing
+deb http://ftp.de.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ testing main contrib non-free
+## Actualizaciones de seguridad
+deb http://security.debian.org/ testing/updates main contrib non-free
+deb-src http://security.debian.org/ testing/updates main contrib non-free
+
