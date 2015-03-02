@@ -73,7 +73,9 @@ esac
 #     ;;
 # esac
 
-PS1="\[\e[0;1m\]\[\e[31;1m\]\u\[\e[0;1m\]\e[m\e[38;5;4m@\e[m\e[38;5;2m\h\e[m - [ \[\e[34;1m\]\w\[\e[0;1m\]\e[m ]\n > \[\e[0m\]"
+#PS1="\[\e[0;1m\]\[\e[31;1m\]\u\[\e[0;1m\]\e[m\e[38;5;4m@\e[m\e[38;5;2m\h\e[m - [ \[\e[34;1m\]\w\[\e[0;1m\]\e[m ]\n > \[\e[0m\]"
+
+PS1="\[\e[01;31m\]\u\[\e[0m\]\[\e[00;34m\]@\[\e[0m\]\[\e[00;32m\]\h\[\e[0m\]\[\e[00;37m\] - [\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[00;37m\]]\n\\$ \[\e[0m\]"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -123,3 +125,13 @@ export PATH=$ANT_ROOT:$PATH
 #splasjscreen de tux en el arranque de la consola
 #linuxlogo -L 10
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+funcionCambiaMAC(){
+        sudo ip link set dev eth0 down
+        #no cambies $1 !!
+        sudo ip link set dev eth0 address $1
+        sudo ip link set dev eth0 up
+        echo MAC cambiada a $1
+}

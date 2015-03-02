@@ -115,7 +115,8 @@ set mouse=a                     " enable mouse
 set nodigraph
 
 " Whitespace
-set tabstop=4 shiftwidth=4      " a tab is two spaces
+set tabstop=8 shiftwidth=8      " tab of Kernel coding style 
+"set tabstop=4 shiftwidth=4      " a tab is foru spaces
 set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
