@@ -75,7 +75,7 @@ esac
 
 #PS1="\[\e[0;1m\]\[\e[31;1m\]\u\[\e[0;1m\]\e[m\e[38;5;4m@\e[m\e[38;5;2m\h\e[m - [ \[\e[34;1m\]\w\[\e[0;1m\]\e[m ]\n > \[\e[0m\]"
 
-PS1="\[\e[01;31m\]\u\[\e[0m\]\[\e[00;34m\]@\[\e[0m\]\[\e[00;32m\]\h\[\e[0m\]\[\e[00;37m\] - [\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[00;37m\]]\n\\$ \[\e[0m\]"
+PS1="\[\e[01;31m\]\u\[\e[0m\]\[\e[00;34m\]@\[\e[0m\]\[\e[00;32m\]\h\[\e[0m\]\[\e[00;37m\] - [\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[00;37m\]] \$(git_branch) \n\$ \[\e[0m\]"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -88,11 +88,6 @@ if [ -x /usr/bin/dircolors ]; then
     #alias fgrep='fgrep --color=auto'
     #alias egrep='egrep --color=auto'
 fi
-
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -135,3 +130,15 @@ funcionCambiaMAC(){
         sudo ip link set dev eth0 up
         echo MAC cambiada a $1
 }
+
+
+git_branch(){
+    tmp=$?
+    branch=`git branch 2> /dev/null | awk '/\*/ { print substr($0, 3); }'`
+    if [ "X$branch" != "X" ]; then
+        echo -n "[$branch]"
+    fi
+    exit $tmp
+}
+
+#export PS1="\[\033[1;37m\]\$(git_branch)\[\033[0m\][\u@\h:\w]\$? \\$ "

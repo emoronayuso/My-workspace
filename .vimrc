@@ -14,7 +14,6 @@ if !filereadable(neobundle_readme)
     let iCanHazNeoBundle=0
 endif
 
-
 " Call NeoBundle
  if has('vim_starting')
      set nocompatible
@@ -115,8 +114,9 @@ set mouse=a                     " enable mouse
 set nodigraph
 
 " Whitespace
-set tabstop=8 shiftwidth=8      " tab of Kernel coding style 
-"set tabstop=4 shiftwidth=4      " a tab is foru spaces
+set tabstop=4 shiftwidth=4      " tab of Kernel coding style
+" Kernel Coding Style
+autocmd Bufenter *.c,*.h set noexpandtab tabstop=8 shiftwidth=8 colorcolumn=80
 set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
@@ -154,6 +154,9 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
 
+" Autocomplete Ctr+space
+inoremap <Nul> <C-n>
+
 " Leader and LocalLeader map
 let mapleader=','
 let maplocalleader= '\'
@@ -165,7 +168,7 @@ vmap <Leader>r "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>/
 nnoremap <C-a> ggmqVG"+y'q
 
 " Show hidden characters
-nmap <leader>sh :set list!<CR>
+nmap <leader>o :set list!<CR>
 set listchars=tab:→\ ,eol:↵,trail:·,extends:↷,precedes:↶
 
 " Delete trailing spaces
