@@ -114,9 +114,16 @@ set mouse=a                     " enable mouse
 set nodigraph
 
 " Whitespace
-set tabstop=4 shiftwidth=4      " tab of Kernel coding style
+"set tabstop=4 shiftwidth=4      " tab of Kernel coding style
+
 " Kernel Coding Style
 autocmd Bufenter *.c,*.h set noexpandtab tabstop=8 shiftwidth=8 colorcolumn=80
+autocmd BufWritePre *.c,*.h :%s/\s\+$//e
+
+
+" LibVirt Coding Style
+autocmd Bufenter *.c,*.h set colorcolumn=80
+
 set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
@@ -287,4 +294,17 @@ let g:airline_right_sep = ''
  let g:neocomplete#enable_at_startup = 1
 
 set spelllang=es,en
+
+"Quitar el molesto beep
+set vb
+
+" Autocomplete con compilador clang
+" clone https://github.com/Rip-Rip/clang_complete
+" sudo apt-get install libclang-dev
+" Configuration .vim/plugin/clang_complete.vim
+let s:clang_library_path='/usr/lib/llvm-3.5/lib/'
+if isdirectory(s:clang_library_path)
+    let g:clang_library_path=s:clang_library_path
+endif
+
 

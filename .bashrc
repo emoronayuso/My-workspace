@@ -141,4 +141,13 @@ git_branch(){
     exit $tmp
 }
 
+dopa_valgring(){
+    valgrind --leak-check=full --show-reachable=yes -v $1
+}
+
 #export PS1="\[\033[1;37m\]\$(git_branch)\[\033[0m\][\u@\h:\w]\$? \\$ "
+
+#Para GTK
+CFLAGS=`pkg-config --libs --cflags gtk+-2.0 `
+export CFLAGS
+
